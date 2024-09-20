@@ -1,1 +1,1 @@
-print("forever we are young")
+print("Молоды навсегда")
