@@ -1,2 +1,2 @@
-print("stay")
+print("Stray Kids")
 
