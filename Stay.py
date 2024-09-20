@@ -1,0 +1,1 @@
+print("фанбаза Stray Kids")
