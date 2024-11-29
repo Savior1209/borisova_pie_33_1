@@ -1,0 +1,248 @@
+body {
+    height: 100vh;
+    width: 98vw;                         
+    background: linear-gradient(180deg, #3e98fb,#ffc6f6);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    background-repeat: no-repeat;
+    color: azure;
+    font-family:'Open Sans', 'Helvetica Neue', sans-serif;  
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(129, 129, 129);     
+}
+.p-size{
+    font-size: 25px;
+    text-align: left;
+    padding-left: 50px;
+    margin-top: -50px;
+    font-weight: bold;
+}   
+p {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 50px;
+    font-weight: normal;
+}
+.podpis{
+    text-align: center;
+    color: azure;
+}
+.raspolozenie-button{
+    display: inline-block;
+}
+.polozenie{
+    text-align: center;
+    margin-left: -50px;
+}
+.burger-checkbox {
+    position:fixed;
+    z-index: 99999;
+    visibility: hidden;
+}
+.burger {
+    position: fixed;
+    z-index: 9999;
+    cursor: pointer;
+    display: block;
+    border: none;
+    background: transparent;
+    width: 40px;
+    height: 26px;
+}
+.burger::before,
+.burger::after {
+    content: '';
+    left: 0;
+    position: absolute;
+    z-index: 9999;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background: #000;
+}
+.burger::before {
+    top: 0;
+    box-shadow: 0 11px 0 #000;
+    transition: box-shadow .3s .15s, top .3s .15s, transform .3s;
+}
+.burger::after {
+    bottom: 0;
+    transition: bottom .3s .15s, transform .3s;
+}
+.burger-checkbox:checked + .burger::before {
+    top: 11px;
+    transform: rotate(45deg);
+    box-shadow: 0 6px 0 rgba(0,0,0,0);
+    transition: box-shadow .15s, top .3s, transform .3s .15s;
+}
+  .burger-checkbox:checked + .burger::after {
+    bottom: 11px;
+    transform: rotate(-45deg);
+    transition: bottom .3s, transform .3s .15s;
+}
+.menu-list {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 999;
+    display: grid;
+    gap: 12px;
+    padding: 42px 0;
+    margin: 0;
+    background-color: #477fd4;
+    list-style-type: none;
+    transform: translateX(-100%);
+    transition: 0.7s;
+    width: 200px;
+}
+.menu-item {
+    display: block;
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+.menu-item:hover {
+    background-color: #2142fc;
+    height: 100%;
+}
+.burger-checkbox:checked ~ .menu-list {
+    transform: translateX(0);
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #092df3;
+}
+.input-box {
+    position: relative;
+    border-radius: 15px;
+    width: 97%;
+}
+input {
+    background: transparent;
+    padding: 10px;
+    border: 0;
+    width: 200px;
+}
+
+legend {
+    text-align: left ;
+    background-color: transparent;
+}
+
+fieldset {
+    border-radius: 15px;
+    width: 78vw;
+    border: solid 2px;
+    border-color: aliceblue;
+    margin: auto;
+}
+.fieldset-image{
+    object-fit: contain;
+    height: 20vh;
+    width: 80vw;
+}
+.fieldset-size{
+    object-fit: contain;
+    height: 20vh;
+    width: 30vw;
+    margin-top: 20px;
+}
+img{
+    border-radius: 7%;
+}
+.fieldset-block {
+    display: inline-block; 
+    width: 35vw;
+}
+
+button {
+    font-size: 20px;
+    background-color:aliceblue;
+    border-radius: 13px;
+    width: 40%;
+    border-style: none;
+    margin-top: 5px;
+    padding: 10px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 2px rgb(129, 129, 129); 
+}
+
+.abs {
+    text-align: center;
+    margin-left: 11px;
+    position: absolute;
+    top: 10%;
+}
+footer {
+    background-color: beige;
+    width: 100vw;
+    height: -webkit-fill-available;
+    float: right;
+    text-align: center;
+    margin-top: 45%;
+    margin-bottom: -8px;
+    color: #000;
+    text-shadow: none;
+}
+
+@media screen and (max-width: 500px) {
+    
+    div {
+        width: 90%;
+        margin: 20px 0 0 10px;
+    }
+    footer {     
+        margin-top: 170%;
+        margin-left: 10px;
+    }
+    .p-polozenie{
+        text-align: left;
+        margin-left: 10px;
+    }
+    .p-size{
+        padding-left: 10px;
+    } 
+    P{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    
+    div {
+        width: 90%;
+        margin: 20px 0 0 10px;
+    }
+    .fieldset-image{
+        height: 30vh;
+        width: 25vw;
+    }
+    .fieldset-size{
+        height: 30vh;
+        width: 15vw;
+        margin-top: 20px;
+    }
+}

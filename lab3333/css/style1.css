@@ -1,0 +1,141 @@
+body {
+    height: 97.5vh;
+    width: 98vw;                         
+    background: linear-gradient(360deg, #3e98fb,#ffc6f6);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    background-repeat: no-repeat;
+    color: azure;
+    text-shadow: 2px 2px 2px rgb(129, 129, 129);     
+
+} 
+.tektur {
+    font-family: "Tektur", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+.cuprum {
+    font-family: "Cuprum", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+p {
+    font-size: 22px;
+    text-align: left;
+    padding-left: 50px;
+}
+.input-box {
+    position: relative;
+    border-radius: 15px;
+    width: 97%;
+}
+input {
+    background: transparent;
+    padding: 10px;
+    border: 0;
+    width: 200px;
+}
+
+legend {
+    text-align: left ;
+    background-color: transparent;
+}
+
+fieldset {
+    border-radius: 15px;
+    width: 78vw;
+    border: solid 2px;
+    border-color: aliceblue;
+    margin: auto;
+}
+
+.fieldset-block {
+    display: inline-block; 
+    width: 35vw;
+}
+
+button {
+    font-size: 20px;
+    background-color:aliceblue;
+    border-radius: 13px;
+    width: 80%;
+    border-style: none;
+    margin-top: 40px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgb(129, 129, 129); 
+}
+
+.abs {
+    text-align: center;
+    margin-left: 11px;
+    position: absolute;
+    top: 10%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img {
+    background-size: cover;
+    background-position: center center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+    border: solid 5px;
+    border-color: aliceblue;
+}
+
+.inline-block {
+    display: inline-block;
+    margin-top: 35%;
+}
+
+.wight {
+    width: 100vw;
+}
+#bg_1 {
+    background-image: url("../img/katok.jpg");
+}
+
+#bg_2 {
+    background-image: url("../img/googl.jpg"); 
+}
+
+#bg_3 {
+    background-image: url("../img/telega.png"); 
+}
+
+
+
+@media screen and (max-width: 500px) {
+    
+    div {
+        width: 90%;
+        margin: 20px 0 0 10px;
+    }
+    .inline-block {
+        margin-top: 120%;    
+        display: inline-block;
+    }
+
+}
+
+@media screen and (min-width: 500px) {
+    
+    div {
+        width: 90%;
+        margin: 20px 0 0 10px;
+    }
+    .inline-block {
+        margin-top: 35%;    
+        display: inline-block;
+    }
+
+}
