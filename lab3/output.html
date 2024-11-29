@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проверка значений функции при x</title>
+    <script defer src="script/laba3_4.js"></script>
+    <link rel="stylesheet" href="css/stile.css"/>
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            width: 60%;
+        }
+        p {
+            font-family: "Play", serif;
+            font-weight: 400;
+            font-style: normal;
+            padding: 5px;
+            float: none;
+            width: 70%;
+        }
+        .krasivaya-forma-div {
+            font-family: "Play", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            border-radius: 5px;
+            padding: 35px 20px;
+            background-color: #88dceb;
+            margin: 16px 100px 10px;
+            text-align: left;
+            float: none;
+            width: 43%;
+            box-sizing: border-box;
+        }
+        .another-forma_div {
+            text-align: center;
+            margin: 20px 150px;
+            float: none;
+            width: 75%;
+            box-sizing: border-box;
+        }
+        .chastnaya-forma-div {
+            font-family: "Play", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            border: solid 3px transparent;
+            border-radius: 5px;
+            flex-direction: row;
+            padding: 10px 30px;
+            background-color: #88dceb;
+            margin: 15px 100px 10px;
+            text-align: left;
+            float: none;
+            width: 42%;
+            box-sizing: border-box;
+        }
+        body {
+            background-repeat: no-repeat;
+            background-color: rgb(196, 243, 243);
+        }
+        .size-button {
+            font-family: "Play", serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 20px;
+            background-color: #81c3d7;
+            border-radius: 10px;
+            border-color: white;
+            float: left;
+            width: 35%;
+            box-sizing: border-box;
+        }
+        .text-input {
+            font-size: 20px;
+            border-radius: 10px;
+            float: none;
+            width: 45%;
+            box-sizing: border-box;
+        }
+        img {
+            width: 100%; 
+            max-width: 400px;
+            background-color: #88dceb;
+            margin: 0 auto;
+            display: block;
+            box-sizing: border-box;
+        }
+        header {
+            text-align: center;
+            font-family: "Balsamiq Sans", serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 20px;
+            padding: 5px 0;
+        }
+        footer {
+            background-color: beige;
+            width: 100%;
+            float: left;
+            text-align: center;
+        }
+        a {
+            margin: 0 15px;
+            color: #2a75af;
+            text-decoration: none;
+        }
+        /* Медиа-запрос для адаптивности */
+        @media screen and (max-width: 600px) {
+            .another-forma_div, .krasivaya-forma-div, .chastnaya-forma-div { 
+                width: 90%;
+                margin: 10px auto;
+            }
+            h1, p {
+                width: 100%;
+            }
+            .size-button, .text-input {
+                width: 100%;
+                margin-top: 10px;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="laba3_1.html">Задание 1</a>
+        <a href="laba_3_2.html">Задание 2</a>
+        <a href="laba3_3.html">Задание 3</a>
+    </header>
+
+    <h1>Вычисление значения функции</h1>
+
+    <div class="another-forma_div">
+        <img src="img/formula4.png" align="right" alt="Формулы задания 4">
+    </div>
+    <div class="krasivaya-forma-div">
+        <p>При a = 2.73 и b = 1.68</p>
+        <p>Введите значение x: <input type="text" class="text-input" id="xTextBox" value="" size="13px">
+            <button class="size-button" onClick="polluchenieReuslts()">OK</button>
+        </p>
+    </div>
+
+    <div class="chastnaya-forma-div">Результат: <input type="text" class="text-input" id="resultTextBox" value="" size="13px">
+    </div>
+
+    <footer>
+        <p>&copy; Пора смотреть дорамы</p>
+    </footer>
+</body>
+</html>

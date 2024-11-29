@@ -1,12 +1,15 @@
-function proverkaIstinnosti(a){
-    var a = prompt(a);
+function proveritChislo(){
+    let a = prompt("Введите число для проверки");
     if (isNaN(a)){
         alert("Введите корректное ЧИСЛО");
     } else if ((a >= 10) && (a <= 99) && (a%2 == 0)){
-        alert("TRUE");
+        alert(`Вы ввели ${a}
+    Результат: TRUE`);
     }
     else{
-        alert("FALSE");
+        alert(`Вы ввели ${a}
+    Результат: FALSE`);
     }
-    
 }
+
+    
