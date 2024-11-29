@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style4.css"/>
+    <title>Document</title>
+    
+</head>
+<body class="cuprum">
+    <main>
+        <div class="slider-container">
+            <div  class="img-container">
+                <div class="img" id="bg_1"></div>
+            </div>
+            <div class="slider">
+                <img src="img/butter.jpg" alt="butter">
+                <img src="img/foreverYung.jpg" alt="yung forever">
+                <img src="img/2cool4.jpg" alt="2 cool 4 sckool">
+                <img src="img/BTS_LY.jpg" alt="LY">
+                <img src="img/map7.jpg" alt="map of the soul 7">
+            </div>
+            <button class="prev-button " aria-label="Посмотреть предыдущий слайд">&lt;</button>
+            <button class="next-button " aria-label="Посмотреть следующий слайд">&gt;</button>
+        </div>
+        <div class="abs">
+            <fieldset >
+                <legend for="">Популярное</legend>
+                <div class="slider-container-popular slider-popular">
+                    <div class="slider-popular">
+                        <img class="img" src="img/map7.jpg" alt="map of the soul 7">
+                        <p>альбом бантанов</p>
+                        <img class="img" src="img/laitstic.jpg" alt="laitstic">
+                        <p>лайтстик бантанов</p>
+                        <img class="img" src="img/bt21.jpg" alt="yung forever">
+                        <p>игрушки BTS</p>
+                        <img class="img" src="img/bts21.jpg" alt="2 cool 4 sckool">
+                        <p>Коя</p>
+                        <img class="img" src="img/laitstic.jpg" alt="LY">
+                        <p>лайтстик стрей кидс</p>
+                    
+                    </div>
+                    <button class="prev-button " aria-label="Посмотреть предыдущий слайд">&lt;</button>
+                    <button class="next-button " aria-label="Посмотреть следующий слайд">&gt;</button>
+                </div>
+            </fieldset>
+            <fieldset >
+                <legend for="">Популярное</legend>
+                
+            </fieldset>
+        </div>
+
+        <div  class="img-container-menu">
+            <div class="img-menu" id="bg_3"></div>
+            <div class="img-menu" id="bg_4"></div>
+            <div class="img-menu" id="bg_5"></div>
+            <div class="img-menu" id="bg_6"></div>
+        </div>
+    </main>
+    <script src="script/lab3(3).js"></script>
+</body>
+</html>

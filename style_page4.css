@@ -1,0 +1,357 @@
+body {                         
+    background: #e9c0e3;/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: 2px 2px 2px rgb(129, 129, 129);  
+    padding: 0;  
+    margin: 0;
+    height: 100vh; 
+    width: 98vw;
+    justify-content: center;
+    
+} 
+
+html{
+    margin: none;
+    padding: none;
+}
+.cuprum {
+    font-family: "Cuprum", sans-serif;
+    font-optical-sizing: auto;
+    font-style:normal;
+}  
+
+legend {
+    text-align: left ;
+    font-weight: bold;
+    background-color: #808dc9;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+figure {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    max-width: 100px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+fieldset {
+    border-radius: 15px;
+    width: 85vw;
+    border: solid 2px;
+    border-color: aliceblue;
+    margin: 5px;
+}
+
+.fieldset-block {
+    display: inline-block; 
+    width: 35vw;
+}
+.page-title {
+    text-align: center;
+}
+  
+.slider-container {
+    position:relative;
+    width: 92vw;
+    overflow:hidden;
+    margin: 20% 5% 10% 5%;
+    border-radius: 20px;
+}
+  
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.slider img {
+    
+    width: 98vw;
+    height:40vh;
+    object-fit:contain;
+    background-color: #f2f3f460;
+    
+}
+  
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 5%;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    background-position: center;
+    
+}
+  
+.prev-button {
+    left: 10px;
+    background-image: url("../img/naza.png");
+    background-repeat: no-repeat; 
+    background-size: contain;
+}
+  
+.next-button {
+    right: 1px;
+    background-image: url("../img/dale.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+  
+.text {
+    color: black;
+    text-shadow: none; 
+    font-style: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; /* Количество строк, которые показываются */
+    line-clamp: none;
+    -webkit-box-orient: vertical;
+}
+ 
+.show-more {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.button-more {
+    border: transparent;
+    background-color: transparent;
+    color: azure;
+}
+.show-more:hover {
+    text-decoration: underline;
+}
+  
+.show-more.active {
+    display:contents; /* Скрываем кнопку "Больше" после разворачивания */
+}
+  
+.show-less {
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+}
+  
+.show-less:hover {
+    text-decoration: underline;
+}
+.show-more.active {
+    display:contents; /* Скрываем кнопку "Больше" после разворачивания */
+}
+  
+.text.expanded {
+    -webkit-line-clamp: initial; /* Снимаем ограничение по количеству строк */
+    line-clamp: none;
+    overflow: visible; /* Показывает весь текст */
+}
+   
+   
+.img-container-menu {
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+    position: fixed; 
+    z-index: 9999; 
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #b280c9; 
+    height: 7vh; 
+    width: 90vw;
+    border-radius: 25px; 
+}
+
+.img-menu {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+
+    margin: 5px 25px;
+    border: 5px solid ;
+    border-color: transparent;
+    position:relative;
+}
+
+#bg_1 {
+    background-image: url("../img/telega.png");
+}
+#bg_2 {
+    background-image: url("../img/menuu.png");
+}
+#bg_3 {
+    background-image: url("../img/search.png");
+}
+
+#bg_4 {
+    background-image: url("../img/home.png");
+}
+#bg_5 {
+    background-image: url("../img/bue.png");
+}
+#bg_6{
+    background-image: url("../img/notification.png");
+}
+#bg_7 {
+    background-image: url("../img/googl1.png");
+}
+
+
+.counter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+   
+}
+
+.counter input {
+    width: 50%;
+    height: 40px;
+    border: solid 2px azure;
+    background-color: transparent;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+.button {
+    padding: 8px 15px;
+    border: 1px solid azure;
+    cursor: pointer;
+    background-color: azure;
+    border-radius: 50%;
+    
+    font-size: 35px;
+    font-style:normal;
+}
+
+.button:disabled {
+    background-color: #cacaca;
+    cursor: default;
+}
+
+ul {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    width: 100%;
+    list-style-type:none;
+    margin: 5px 0 0 0 ;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b280c9;
+    border-radius: 20px;
+}
+  
+li {
+    float: left;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  
+li a:hover {
+    background-color: #d021fc;
+}
+.active {
+    background-color: #ff9ff7;
+}
+
+
+.img-container {
+    display: flex;
+    justify-content: right;
+    margin-top: 30px;
+    margin-right: 10px;
+    position:fixed;
+    z-index: 9999; 
+    right: 15px;
+    transform: translateX(10%);
+    transform: translateY(-25%);
+    background-color: transparent; 
+    height: 7%; 
+    width: 10%; 
+    
+}
+
+.img-icon {
+    background-size: cover;
+    background-position: center center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 -10px;
+    border: 3px solid ;
+    border-color: aliceblue;
+    position:static;
+}
+
+@media screen and (min-width:500px) { 
+    body{
+        height: 210vh;
+    }
+    .slider img {
+        width: 98vw;
+        height:98vh;
+        object-fit:contain;
+    }
+    .slider-container{
+        margin-top: 10%;
+    }
+    fieldset {
+        border-radius: 15px;
+        width: 90vw;
+        border: solid 2px;
+        border-color: aliceblue;
+        margin: 10px;
+    }
+    .img-icon {
+        margin: -10px;
+       
+    }
+    .img-container-menu {
+ 
+        height: 10vh; 
+        width: 90vw;
+        
+    }
+    .button{
+        width: 5%;
+    }
+}
+@media screen and (max-width:500px){
+    body{
+        height: 107vh;
+    }
+    .button{
+        width: 20%;
+    }
+    
+}
+a {
+    width: 75%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
