@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylee2.css"/>
+    <link rel="icon" type="image/png" sizes="16*16" href="img/mood.ico">
+    <script src="script/laboratornaya3_4.js"></script>
+    <title>Задание 4</title>
+</head>
+<body class="cuprum">
+    <header>
+        <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="laboratornaya3_1.html" class="menu-item">Задание 1</a><li>
+                <li><a href="laboratornaya3_2.html" class="menu-item">Задание 2</a><li>
+                <li><a href="laboratornaya3_3.html" class="menu-item">Задание 3</a><li>
+                <li class="active menu-item" >Задание 4<li>
+            </ul>
+        </div>
+    </header>
+    <div class="abs">
+        <p class="p-size">Задание 4</p>
+        <p>Вычислить значение функции y=f(x) при произвольных значениях x</p>
+        <p>При a = 2.73 и b = 1.68</p>
+        <fieldset>
+            <legend for="">Введите Х</legend>
+            <input class="input-box" id="xTextBox">
+        </fieldset>
+        <fieldset>
+            <legend for="">Результат</legend>
+            <input class="input-box" id="resultTextBox">
+        </fieldset>
+        <div class="raspolozenie-button">
+            <button onclick="polluchenieReuslts()">Ввести</button>
+            <button onclick="clearVsePolnostiu()">Очистить</button> 
+        </div>
+        <fieldset class="fieldset-size"><img src="img/formula4.png" alt="" class="fieldset-image">
+        </fieldset>
+    </div>
+    <footer>
+        <p class="p-polozenie">&copy; Время смотреть дорамы. По всем вопросам обращаться к прохожим на улице, может они помогут</p>
+   </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylee2.css"/>
+    <link rel="icon" type="image/png" sizes="16*16" href="img/mood.ico">
+    <script src="script/laboratornaya3_2.js"></script>
+    <title>Задание 1</title>
+    
+</head>
+<body class="cuprum">
+    <header>
+        <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="laboratornaya3_1.html" class="menu-item">Задание 1</a><li>
+                <li class="active  menu-item">Задание 2<li>
+                <li><a href="laboratornaya3_3.html" class="menu-item">Задание 3</a><li>
+                <li><a href="laboratornaya3_4.html" class="menu-item">Задание 4</a><li>
+            </ul>
+        </div>
+        
+
+    </header>
+    <div class="abs">
+        <p class="p-size">Задание 2</p>
+        <p>Введите целое число</p>
+        <p>Если введённое число = 0, то программа выведет 10</p>         
+        <p>Если введённое число положительное, то к числу +1</p>    
+        <p>Если введённое число отрицательное, то от числа -2</p>
+        <fieldset>
+            <legend for="">Введите A</legend>
+            <input class="input-box" id="chisloA">
+        </fieldset>
+        <fieldset>
+            <legend for="">Результат</legend>
+            <input class="input-box" id="resultat">
+        </fieldset>
+        <div class="raspolozenie-button">
+            <button onclick="getZnachenie()">Ввести</button>
+            <button onclick="clearVsePolnostiu()">Очистить</button>
+        </div>
+        
+    </div>
+    <footer>
+        <p class="p-polozenie">&copy; Время смотреть дорамы. По всем вопросам обращаться к прохожим на улице, может они помогут</p>
+   </footer>
+</body>
+</html>
