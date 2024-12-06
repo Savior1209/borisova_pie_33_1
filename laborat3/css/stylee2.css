@@ -8,6 +8,7 @@ body {
     font-weight: bold;
     text-shadow: 2px 2px 2px rgb(129, 129, 129);     
 }
+
 .p-size{
     font-size: 25px;
     text-align: left;
@@ -15,12 +16,14 @@ body {
     margin-top: -50px;
     font-weight: bold;
 }   
+
 p {
     font-size: 20px;
     text-align: left;
     padding-left: 50px;
     font-weight: normal;
 }
+
 .podpis{
     text-align: center;
     color: azure;
@@ -74,7 +77,7 @@ p {
     box-shadow: 0 6px 0 rgba(0,0,0,0);
     transition: box-shadow .15s, top .3s, transform .3s .15s;
 }
-  .burger-checkbox:checked + .burger::after {
+.burger-checkbox:checked + .burger::after {
     bottom: 11px;
     transform: rotate(-45deg);
     transition: bottom .3s, transform .3s .15s;
@@ -85,7 +88,7 @@ p {
     position: absolute;
     z-index: 999;
     display: grid;
-    gap: 12px;
+    gap: 1px;
     padding: 42px 0;
     margin: 0;
     background-color: #477fd4;
@@ -93,18 +96,20 @@ p {
     transform: translateX(-100%);
     transition: 0.7s;
     width: 200px;
+    height: 68vh;
 }
 .menu-item {
     display: block;
-    padding: 8px;
+    padding: 17px;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     text-decoration: none;
+    height: 50%;
 }
 .menu-item:hover {
     background-color: #2142fc;
-    height: 100%;
+    height: 75%;
 }
 .burger-checkbox:checked ~ .menu-list {
     transform: translateX(0);
@@ -134,6 +139,10 @@ li a:hover {
 }
 .active {
     background-color: #092df3;
+    height: 75%;
+}
+.otstup {
+    margin-top: 10px;
 }
 .input-box {
     position: relative;
@@ -244,5 +253,8 @@ footer {
         height: 30vh;
         width: 15vw;
         margin-top: 20px;
+    }
+    .menu-list {
+        height: 86vh;
     }
 }

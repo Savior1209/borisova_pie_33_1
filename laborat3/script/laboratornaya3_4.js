@@ -6,7 +6,7 @@ function polluchenieReuslts(){
     x = parseFloat(x);
     switch(x){
         case -2: 
-        result = Math.sin(Math.log10(Math.abs(x)));
+        result = Math.sin(Math.log(Math.abs(x)));
         break;
         case 3: 
         result = Math.pow( 4 * x + b,2);

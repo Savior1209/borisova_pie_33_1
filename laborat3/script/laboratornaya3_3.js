@@ -4,12 +4,12 @@ function poluchitZnachenia(){
     const b = 1.68;
     let result;
     if (x <= 1){
-        result = Math.sin(Math.log10(Math.abs(x)));
+        result = Math.sin(Math.log(Math.abs(x)));
     } else if (x > 1 && x <= 3){
         result = 4 * x + b * b;
     } else if (x > 3){
         result = 1/ (x*x + a*a);
-    }   
+    }
     document.getElementById("resultTextBox").value = parseFloat(result).toFixed(3);
 }
 function clearVsePolnostiu(){
