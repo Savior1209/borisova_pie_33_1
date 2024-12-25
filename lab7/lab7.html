@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="even number, integer">
+    <link rel="icon" type="image/png" href="img/wevers.ico">
+    <link rel="stylesheet" href="css/style7.css">
+
+    <title>Weverse Shop</title>
+</head>
+<body>
+<header>
+    <h1>Weverse Shop</h1>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="lab3.html">Лабораторная  №3</a>
+        <a href="lab4.html">Лабораторная  №4</a>
+        <a href="lab5.html">Лабораторная  №5</a>
+        <a href="lab6.html">Лабораторная  №6</a>
+        <a>Лабораторная работа №7</a>
+    </nav>
+</header>
+<h1>Товары</h1>    
+<div class="container">
+    <div id="category-buttons">
+        <button onclick="showAll()">Все товары</button>
+        <button onclick="showCategory('beauty')">Красота</button>
+        <button onclick="showCategory('fragrances')">Духи</button>
+        <button onclick="showCategory('furniture')">Мебель</button>
+        <button onclick="showCategory('groceries')">Еда</button>
+    </div>
+    <div id="product-details" class="product-details" style="display: none;">
+        <h2>Детали</h2>
+        <div id="details-content"></div>
+        <button id="hide-details-button">Свернуть</button>
+    </div>
+    <div id="products" class="products-grid"></div>
+    <div class="store-info">
+        <h2>Информация</h2>
+        <p>환영 это Weverse Shop</p>
+        <p>Большой выбор товаров</p>
+        <p>Низкие цены</p>
+        <p>Здесь, коннечно, не товары из азии, но тоже годно</p>
+    </div>
+</div>
+<script src="js/Lab7.js"></script> 
+<footer>
+    <p>&copy; Время смотреть дорамы. По всем вопросам обращаться к прохожим на улице, может они помогут</p>
+</footer>
+
+</body>
+</html>
