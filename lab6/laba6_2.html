@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="icon" type="image/png" href="img/mood.ico">
+    <script src="script/laba6_2.js"></script>
+    <title>Задание 2</title>
+</head>
+<body class="cuprum">
+    <header>
+        <div class="menu">
+            <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+            <label for="burger-checkbox" class="burger"></label>
+            <ul class="menu-list">
+                <li><a href="../all_lab.html" class="menu-item">Главная</a></li>
+                <li><a href="laba6_1.html" class="menu-item otstup">Задание 1</a></li>
+                <li class="active  menu-item">Задание 2</li>
+            </ul>
+        </div>
+    </header>
+    <div class="abs">
+        <h1>Лабораторная работа №6</h1>
+        <p class="p-size">Задание 2</p>
+        <p>Введите целые числа А и Б </p>
+        <p>Эти числа - диапазон элементов в списке</p>
+        <div class="content-center">
+            <div class="prosto-class">
+                <div class="stolbik-vivod">
+                    <fieldset>
+                        <legend>Введите размер массива, M</legend>
+                        <input class="input-box" id="chisloM">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Введите размер массива, N</legend>
+                        <input class="input-box" id="chisloN">
+                    </fieldset>
+                </div>         
+                <div class="stolbik-vivod">
+                    <fieldset>
+                        <legend>Исходный массив</legend>
+                        <p class="input-box" id="massItog"> </p>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="stolbik-vivod otstup">
+                <fieldset>
+                    <legend>Изменённый массив</legend>
+                    <p class="input-box" id="massItog2"> </p>
+                </fieldset>
+            </div>
+        </div>
+        <div class="raspolozenie-button">
+            <button onclick="izmenenieMassiva() ">Ввести</button>
+            <button onclick="clearVsePolnostiu()">Очистить</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="p-polozenie">&copy; Время смотреть дорамы. По всем вопросам обращаться к прохожим на улице, может они помогут</p>
+   </footer>
+</body>
+</html>
