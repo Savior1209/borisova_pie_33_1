@@ -1,0 +1,242 @@
+body {
+    font-family: "Cuprum", sans-serif;
+    font-optical-sizing: auto;
+    font-style:normal;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+h1{
+    padding: 0;
+    margin: 5px;
+    text-align: center;
+}
+.table-in {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#options {
+    height: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.img-cell {
+    height: 100%;
+}
+
+.pad {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    #options {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 5px;
+        margin-top: 5px;
+    }
+
+    .table-in {
+        display: block;
+    }
+}
+
+.head-cont {
+    background-color: #9fbcf1b1;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 0 10px 0;
+    height: 130px;
+}
+
+@media (max-width: 700px) {
+    .head-cont {
+        height: auto;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: 50vh;
+    border-radius: 10px;
+}
+
+
+.no-width {
+    width: 98%;
+}
+
+#restartBtn {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    height: 70%;
+    margin: 5% 5% 1% 5%;
+    background-color: #acccff8b;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px #dddddd;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 8% 5% 2% 5%;
+        box-shadow: 0px 0px 5px 5px #dddddd;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        margin: 20% 5% 2% 5%;
+        box-shadow:  0px 0px 5px 5px #dddddd;
+    }
+
+    img {
+        height: auto;
+    }
+}
+
+.centerBtn {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 5%;
+    background-color:  rgba(10, 11, 72, 0.97);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
+    transition: all 1s;
+    box-shadow: 6px 2px 0 0 #ffffff;
+    text-shadow:none
+    
+}
+
+@media (max-width:700px) {
+    .header {
+        box-shadow: 6px 2px 0 0 #ffffff;
+    }
+    .footer-text {
+       
+        padding: 0 20px;
+    }
+    .footer {
+        margin-left: 15px;
+
+    }
+}
+
+
+.header:hover {
+    text-shadow:
+        -1px -1px 1px silver,
+        1px -1px 1px silver;
+    color: white;
+}
+
+.story {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+#myButton {
+    border: 1px solid #333;
+    box-shadow: 2px 2px 0 0 #ffffff;
+}
+
+#myButton:hover {
+    transform: translateY(-2px);
+    box-shadow: none;
+}
+
+#myButton:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+button {
+    padding: 1px 20px;
+    background-color: #5661c7;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+    margin: 10px;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: inset 2px 2px 5px #9ebeef;
+    border: 1px solid #000000;
+}
+
+@media (max-width:700px) {
+    button {
+        box-shadow: 2px 2px 0 0 #bed9e7;
+    }
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgb(161, 134, 235);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    box-sizing: border-box;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: white;
+    margin: 0;
+    background-color: rgba(7, 8, 49, 0.781);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100vw;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.mini-p {
+    font-size: 10px;
+}
+
+@media (max-width:700px) {
+    .inventory {
+        box-shadow: 2px 2px 0 0 #333;
+    }
+}
